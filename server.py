@@ -25,8 +25,9 @@ def upload_file():
         print(answers, name, team)
         f = request.files['file']
         app.config['COUNT'] = app.config['COUNT'] + 1
+        count = app.config['COUNT']
         f.save(os.path.join(
-            app.config['UPLOAD_FOLDER'], f'{app.config['COUNT']}{f.filename}'))
+            app.config['UPLOAD_FOLDER'], f'{count}{f.filename}'))
         return 'Thank you! Your data has been saved correctly!'
 
 
