@@ -51,7 +51,7 @@ def scan_github(username: str):
     user = g.get_user(username)
     experience, tech_stack = get_languages(user)
     starred = parse_repos(user)
-    print(experience, tech_stack, starred)
+    return(experience, tech_stack, starred)
     # get_stars(user)
 
 
