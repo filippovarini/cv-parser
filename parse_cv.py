@@ -1,5 +1,4 @@
 from ast import parse
-import textract
 from stop_words import get_stop_words
 from nltk.corpus import stopwords
 import PyPDF2
